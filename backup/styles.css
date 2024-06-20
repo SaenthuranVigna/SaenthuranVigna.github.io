@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif; /* Set Poppins as default font */
+}
+
+body,
+.navbar {
+  background-color: #f0f8ff;
+  height: 60px; /* Adjust to a suitable height */
+
+}
+
+.navbar {
+  padding-left: 0; /* Remove left padding */
+}
+
+.navbar-brand {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start; /* Align Home link to the left */
+  align-items: center;
+}
+
+.navbar-item {
+  padding-left: 0; /* Remove left padding */
+}
+
+.msquared-title {
+  font-size: 1.2rem;
+  background: none; /* Remove background gradient */
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
+  background-clip: initial;
+  text-fill-color: initial;
+  animation: none;
+}
+
+.msquared-logo {
+  height: 100px; /* Set the height to fit within the navbar */
+  width: auto; /* Maintain aspect ratio */
+  margin-right: 0.5rem; /* Add some space between the logo and text */
+}
+
+
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hero {
+  position: relative;
+  padding: 0; /* Remove default padding */
+  color: white;
+  background-color: #000000; /* Fallback color */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1); /* Adjust opacity as needed */
+}
+
+.hero-body {
+  position: relative;
+  padding: 0; /* Remove default padding */
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px; /* Ensure height consistency */
+}
+
+.full-width-hero {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content horizontally */
+  width: 100%;
+  max-width: 1200px; /* Ensure the content doesn't stretch too wide */
+}
+
+.hero-title-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.hero-title-container.left,
+.hero-title-container.right {
+  flex: 1;
+  text-align: center; /* Center-align text within containers */
+}
+
+.hero-title,
+.nav-title {
+  font-family: 'Poppins', sans-serif; /* Set Poppins as font for titles */
+  font-weight: 700;
+  font-size: 7.5rem; /* Adjust font size to better fit the space */
+  margin: 0; /* Remove default margin */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.hero-subtitle {
+  font-family: 'Poppins', sans-serif; /* Set Poppins as font for subtitles */
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.nav-title {
+  font-size: 1.2rem;
+  margin: 0 1rem;
+}
+
+.illustration {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.illustration img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-image {
+  width: 425px; /* Adjust this value to make the image larger or smaller */
+  height: auto;
+  max-width: 425px;
+  margin: 0 20px; /* Add margin to create space between image and text */
+  align-self: center; /* Center the image vertically */
+}
+
+.section-divider {
+  border: 0;
+  height: 1px;
+  background: #000; /* Black line */
+  margin: 2rem auto; /* Space around the line and center it */
+  width: 70%; /* Ensure it spans 70% of the width */
+  padding: 0; /* Remove padding */
+}
+
+.full-content-container {
+  width: 100%; /* Set the width to 100% to encompass the full area */
+  margin: 0; /* Remove the auto margin to align it with the edges */
+  padding: 2rem;
+  background-color: #f8f9fa; /* Light gray background for content */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.full-width-container {
+  width: 100vw; /* Ensure it spans the full width */
+  margin-left: calc(-50vw + 50%);
+  padding: 2rem; /* Padding: top right bottom left */
+  position: relative;
+}
+
+.container.content {
+  margin: 0; /* Remove margin between content blocks */
+  padding: 2rem; /* Adjust padding to match the full container */
+}
+
+.illustration {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.illustration img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* New CSS for content layout */
+.content-section {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content horizontally */
+  padding: 2rem;
+}
+
+.icon-image {
+  width: 250px; /* Adjust this value to make the icon smaller */
+  height: 250px; /* Adjust this value to make the icon smaller */
+}
+
+.icon-container {
+  flex: 0 0 auto; /* Do not grow or shrink */
+  margin-right: 1rem; /* Space between icon and text container */
+}
+
+.icon-large {
+  font-size: 7rem; /* Adjust this value to make the icon larger */
+}
+
+.text-container {
+  flex: 1;
+  padding: 1rem;
+  max-width: 800px; /* Add this line to set the maximum width */
+  width: 100%; /* Ensures the container does not exceed 100% width */
+}
+
+/* Add specific color classes for the hero titles */
+.transform-text {
+  color: #ba454a !important; /* Color for "Transform" */
+}
+
+.ideas-text {
+  color: #b86e52 !important; /* Color for "Ideas" */
+}
+
+.reality-text {
+  color: #395aa7 !important; /* Color for "Reality" */
+}
+
+.welcome-section {
+  text-align: center;
+}
+
+.welcome-heading {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Font Options */
+.font-raleway .hero-title,
+.font-raleway .nav-title,
+.font-raleway .hero-subtitle {
+  font-family: 'Raleway', sans-serif;
+}
+
+.font-montserrat .hero-title,
+.font-montserrat .nav-title,
+.font-montserrat .hero-subtitle {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-playfair .hero-title,
+.font-playfair .nav-title,
+.font-playfair .hero-subtitle {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-lato .hero-title,
+.font-lato .nav-title,
+.font-lato .hero-subtitle {
+  font-family: 'Lato', sans-serif;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 1200px) {
+  .hero-title {
+    font-size: 6rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 4rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+  }
+  .hero-title {
+    font-size: 3rem; /* Adjust font size for smaller screens */
+  }
+  .hero-image {
+    width: 300px; /* Adjust image size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+  .hero-image {
+    width: 200px; /* Adjust image size for smaller screens */
+  }
+}
